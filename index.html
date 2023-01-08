@@ -1,0 +1,105 @@
+<html>
+
+<head>
+  <title>❄️ LOGIN ❄️</title>
+</head>
+<h1>❄️ LOGIN ❄️</h1>
+
+<body>
+  <img id="s" src="https://img.freepik.com/free-vector/flat-design-winter-background_23-2148715242.jpg?w=2000">
+<center>
+  <form>
+  
+
+      <label for="a"> Name: </label>
+      <input type="text" name="a" placeholder="ENTER NAME HERE "> <br><br>
+
+
+      <label for="c"> Last Name: </label>
+      <input type="text" name="c" placeholder="ENTER LAST NAME HERE "> <br><br>
+
+
+      <label for="b"> Email: </label>
+      <input type="email" name="b" placeholder="ENTER EMAIL HERE "> <br><br>
+
+
+
+      <label for="D"> User Id: </label>
+      <input id="userid" type="text" name="D" placeholder="ENTER  USER ID HERE "> <br><br>
+
+
+      <label for="e"> Password: </label>
+      <input id="pwd" type="password" name="e" placeholder="ENTER PASSWORD HERE "> <br><br>
+  </form>
+  <button id = "r" onclick="show()">SUBMIT</button>
+</center>
+  <script>
+function show(){
+  a = "Coder123";
+  b = "Swastik123";
+  userid = document.getElementById("userid").value;
+  pwd = document.getElementById("pwd").value;
+  if(userid == a && pwd == b){
+    alert("Login successfully")
+  }
+  else{
+    alert("Check username and password again!")
+
+  }
+}
+    
+
+
+
+  </script>
+  <style>
+    form {
+      text-align: center;
+      color: white;
+      font-size: 30px;
+      text-shadow: 2px 2px 2px black;
+      font-family: 'Permanent Marker', cursive;
+
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 50px;
+      text-shadow: 2px 2px 2px black;
+      font-family: 'Permanent Marker', cursive;
+      background-color: rgb(68, 183, 255);
+
+    }
+
+    #s {
+
+      height: 950px;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      opacity: 0.9;
+      width: 1519px;
+      ;
+    }
+
+    #r {
+      height: 50;
+      width: 150;
+      background-color: rgb(255, 255, 255);
+      color: rgb(101, 216, 255);
+      font-size: 20px;
+      margin-top: 70;
+
+
+    }
+  </style>
+
+
+</body>
+
+
+
+
+</html>
